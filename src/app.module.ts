@@ -4,7 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { FootballDataModule } from './football-data/football-data.module';
 import { LlmModule } from './llm/llm.module';
-
+import { DiscordModule } from './discord/discord.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -13,6 +13,7 @@ import { LlmModule } from './llm/llm.module';
     }),
     FootballDataModule,
     LlmModule,
+    DiscordModule,
   ],
   controllers: [AppController],
   providers: [AppService],

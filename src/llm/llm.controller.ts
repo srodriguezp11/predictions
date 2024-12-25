@@ -14,4 +14,9 @@ export class LlmController {
   async generateMatchdayPrediction(): Promise<string> {
     return this.llmService.generateMatchdayPrediction();
   }
+
+  @Get('send-prediction-to-discord')
+  async sendPredictionToDiscord(): Promise<any> {
+    return this.llmService.sendPredictionToDiscord();
+  }
 }
