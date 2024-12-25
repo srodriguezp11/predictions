@@ -7,5 +7,6 @@ import { FootballDataService } from './football-data.service';
   imports: [HttpModule],
   controllers: [FootballDataController],
   providers: [FootballDataService],
+  exports: [FootballDataService],
 })
 export class FootballDataModule {}
